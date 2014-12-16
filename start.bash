@@ -26,4 +26,5 @@ if [[ -f "$OVERRIDE/$CONFIG" ]]; then
   ln -s "$OVERRIDE/$CONFIG" "$CONFIG"
 fi
 
+#/etc/init.d/rsyslog start && /etc/init.d/haproxy start && tail -F /var/log/haproxy.log
 haproxy -f /etc/haproxy/haproxy.cfg -p "$PIDFILE"
