@@ -29,5 +29,5 @@ WORKDIR /etc/haproxy
 # Define default command.
 CMD ["bash", "/haproxy-start"]
 
-EXPOSE 22 80 443 6667 22002
+EXPOSE 22 80 81 82 443 444 445 6667 22002
  
