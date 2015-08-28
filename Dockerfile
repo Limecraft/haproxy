@@ -6,7 +6,7 @@
 
 # Pull base image.
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM ubuntu
 
 # Install Haproxy.
 RUN \
