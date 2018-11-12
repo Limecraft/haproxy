@@ -1,7 +1,7 @@
+#!groovy
+
 @Library('LimecraftSharedLibrary') import com.limecraft.Utilities
-
 def utils = new Utilities(this)
-
 def err = null
 
 currentBuild.result = "SUCCESS"
