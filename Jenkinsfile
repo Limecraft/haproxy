@@ -19,7 +19,7 @@ properties([
 boolean push_hub = params.PUSH_HUB
 
 try {
-    node ('docker') {
+    node () {
         def v
 
         stage ('Checkout') {
