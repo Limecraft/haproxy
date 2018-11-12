@@ -32,10 +32,10 @@ try {
 
 /*
             v = utils.version()
+*/
             if (v) {
                 echo "Building version ${v}"
             }
-*/
         }
 
         def newApp
