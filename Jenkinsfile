@@ -21,13 +21,21 @@ boolean push_hub = params.PUSH_HUB
 try {
     node () {
         def v
+        def dockfile
 
         stage ('Checkout') {
             checkout scm
+
+            env.WORKSPACE = pwd()
+            def file = readFile "${env.WORKSPACE}/Dockerfile"
+            v = file.split("\n")[0].split(":")[1]
+
+/*
             v = utils.version()
             if (v) {
                 echo "Building version ${v}"
             }
+*/
         }
 
         def newApp
